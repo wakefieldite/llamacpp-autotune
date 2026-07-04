@@ -144,7 +144,6 @@ Each run produces a timestamped directory containing:
 
 ### Example `SUMMARY.md` excerpt
 
-```markdown
 - Decisions: fa=on ub=2048 b=2048 ncmoe=43 (observed floor: 41) t=12 mmap=on kv=f16 arch=deepseek2
 ## Measured performance (final config)
 - tg128 @ d=4096: **18.13 t/s**   |   pp512 @ d=4096: **255.31 t/s**
@@ -154,7 +153,6 @@ Each run produces a timestamped directory containing:
 llama-server -m Model-Q4_K_M.gguf -ngl 99 -ncmoe 43 -fa on -c 32768 \
   -t 12 -b 2048 -ub 2048 --jinja --temp 1.0 --top-p 0.95 --repeat-penalty 1.0 \
   --host 127.0.0.1 --port 8081
-```
 ```
 
 ---
